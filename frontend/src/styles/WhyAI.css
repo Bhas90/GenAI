@@ -1,0 +1,98 @@
+.whyai-section{
+  padding:90px 0;
+  background:#f8fafc;
+}
+
+.section-heading{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.section-heading h2{
+  font-size:42px;
+  color:#1f2633;
+  margin-bottom:15px;
+}
+
+.section-heading p{
+  color:#666;
+  font-size:18px;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+  margin-bottom:60px;
+}
+
+.stat-card{
+  background:white;
+  padding:30px;
+  text-align:center;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.stat-card:hover{
+  transform:translateY(-8px);
+}
+
+.stat-card h3{
+  color:#F58220;
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.career-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+}
+
+.career-card{
+  background:white;
+  border-radius:20px;
+  padding:35px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.career-card h4{
+  margin-bottom:20px;
+  font-size:24px;
+  color:#1f2633;
+}
+
+.career-card ul{
+  padding-left:20px;
+}
+
+.career-card li{
+  margin-bottom:12px;
+  color:#555;
+}
+
+@media(max-width:992px){
+
+  .stats-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .career-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+
+  .section-heading h2{
+    font-size:32px;
+  }
+
+}

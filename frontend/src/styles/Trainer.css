@@ -1,0 +1,109 @@
+.trainer-section{
+  padding:100px 0;
+  background:#ffffff;
+}
+
+.trainer-container{
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:50px;
+  align-items:center;
+}
+
+.trainer-image img{
+  width:100%;
+  border-radius:25px;
+  box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+.trainer-tag{
+  background:#fff3e8;
+  color:#F58220;
+  padding:10px 18px;
+  border-radius:30px;
+  font-weight:700;
+}
+
+.trainer-content h2{
+  font-size:42px;
+  margin:20px 0 10px;
+  color:#1f2633;
+}
+
+.trainer-content h3{
+  font-size:30px;
+  color:#F58220;
+  margin-bottom:10px;
+}
+
+.trainer-role{
+  font-weight:600;
+  color:#555;
+  margin-bottom:20px;
+}
+.trainer-sub-role{
+  color:#64748b;
+  font-size:15px;
+  margin-bottom:20px;
+}
+
+.trainer-content p{
+  color:#666;
+  line-height:1.8;
+}
+
+.trainer-stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  margin:35px 0;
+}
+
+.trainer-stats div{
+  background:#f8fafc;
+  border-radius:20px;
+  padding:20px;
+  text-align:center;
+}
+
+.trainer-stats h4{
+  color:#F58220;
+  font-size:28px;
+  margin-bottom:5px;
+}
+
+.trainer-btn{
+  display:inline-block;
+  background:#F58220;
+  color:white;
+  padding:16px 30px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:700;
+  transition:.3s;
+}
+
+.trainer-btn:hover{
+  transform:translateY(-4px);
+  box-shadow:0 15px 35px rgba(245,130,32,.35);
+}
+
+@media(max-width:992px){
+
+  .trainer-container{
+    grid-template-columns:1fr;
+  }
+
+  .trainer-stats{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:768px){
+
+  .trainer-content h2{
+    font-size:32px;
+  }
+
+}

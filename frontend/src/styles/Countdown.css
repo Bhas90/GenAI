@@ -1,0 +1,111 @@
+/* src/styles/Countdown.css */
+
+.countdown-section{
+  padding:80px 0;
+  background:#ffffff;
+}
+
+.countdown-top{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.live-tag{
+  background:#ffe9dc;
+  color:#F58220;
+  padding:8px 18px;
+  border-radius:30px;
+  font-weight:700;
+}
+
+.countdown-top h2{
+  font-size:42px;
+  margin:20px 0;
+  color:#1f2633;
+}
+
+.countdown-top p{
+  color:#666;
+  font-size:18px;
+}
+
+.timer-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  margin-bottom:40px;
+}
+
+.timer-card{
+  background:#fff;
+  border:2px solid #F58220;
+  border-radius:20px;
+  padding:30px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.timer-card h3{
+  font-size:50px;
+  color:#F58220;
+  margin:0;
+}
+
+.timer-card p{
+  margin-top:10px;
+  font-weight:600;
+}
+
+.event-details{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-bottom:30px;
+  flex-wrap:wrap;
+}
+
+.event-details div{
+  background:#f8fafc;
+  padding:15px 25px;
+  border-radius:30px;
+  font-weight:600;
+}
+
+.seat-alert{
+  text-align:center;
+  color:#ef4444;
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:30px;
+}
+
+.countdown-btn{
+  display:block;
+  width:max-content;
+  margin:auto;
+  text-decoration:none;
+  background:#F58220;
+  color:white;
+  padding:18px 40px;
+  border-radius:40px;
+  font-size:18px;
+  font-weight:700;
+  transition:.3s;
+}
+
+.countdown-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 30px rgba(245,130,32,.35);
+}
+
+@media(max-width:768px){
+
+  .timer-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .countdown-top h2{
+    font-size:30px;
+  }
+
+}

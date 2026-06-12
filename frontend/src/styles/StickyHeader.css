@@ -1,0 +1,235 @@
+/* ===========================
+   TOP ALERT BAR
+=========================== */
+
+.top-alert{
+  background:#F58220;
+  color:#fff;
+  overflow:hidden;
+  white-space:nowrap;
+  padding:10px 0;
+  font-weight:600;
+  position:sticky;
+  top:0;
+  z-index:9999;
+}
+
+.scroll-text{
+  display:inline-block;
+  padding-left:100%;
+  animation:scroll-left 35s linear infinite;
+}
+
+/* Pause scrolling on hover */
+.top-alert:hover .scroll-text{
+  animation-play-state:paused;
+}
+
+@keyframes scroll-left{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform:translateX(-100%);
+  }
+}
+
+.alert-register-btn{
+  margin:0 15px;
+  padding:8px 18px;
+  border:none;
+  border-radius:30px;
+  background:#ffffff;
+  color:#F58220;
+  font-weight:700;
+  cursor:pointer;
+  white-space:nowrap;
+  transition:all .3s ease;
+  display:inline-block;
+}
+
+.alert-register-btn:hover{
+  background:#1f2633;
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+  position:sticky;
+  top:42px;
+  background:#ffffff;
+  z-index:9998;
+  box-shadow:0 2px 20px rgba(0,0,0,0.08);
+}
+
+.header-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:85px;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo img{
+  width:150px;
+  height:120px;
+  display:block;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+.nav{
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+.nav a{
+  text-decoration:none;
+  color:#1f2633;
+  font-weight:600;
+  transition:0.3s ease;
+}
+
+.nav a:hover{
+  color:#F58220;
+}
+
+/* ===========================
+   ACTION BUTTONS
+=========================== */
+
+.header-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.call-btn,
+.whatsapp-btn{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:none;
+  color:#fff;
+  cursor:pointer;
+  transition:.3s ease;
+}
+
+.call-btn{
+  background:#2563eb;
+}
+
+.call-btn:hover{
+  transform:translateY(-2px);
+}
+
+.whatsapp-btn{
+  background:#25D366;
+}
+
+.whatsapp-btn:hover{
+  transform:translateY(-2px);
+}
+
+.demo-btn{
+  background:#F58220;
+  color:#fff;
+  border:none;
+  padding:12px 22px;
+  border-radius:30px;
+  font-weight:700;
+  cursor:pointer;
+  transition:.3s ease;
+}
+
+.demo-btn:hover{
+  background:#1f2633;
+  transform:translateY(-2px);
+}
+
+.mobile-menu{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:992px){
+
+  .header{
+    top:40px;
+  }
+
+  .logo img{
+    width:170px;
+  }
+
+  .nav{
+    position:fixed;
+    top:120px;
+    left:-100%;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    padding:30px;
+    gap:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:.4s ease;
+  }
+
+  .nav.active{
+    left:0;
+  }
+
+  .mobile-menu{
+    display:block;
+  }
+
+  .demo-btn{
+    display:none;
+  }
+}
+
+@media(max-width:768px){
+
+  .header-container{
+    height:75px;
+  }
+
+  .logo img{
+    width:150px;
+  }
+
+  .call-btn,
+  .whatsapp-btn{
+    width:38px;
+    height:38px;
+  }
+}
+
+@media(max-width:480px){
+
+  .logo img{
+    width:130px;
+  }
+
+  .scroll-text{
+    animation:scroll-left 25s linear infinite;
+  }
+}
