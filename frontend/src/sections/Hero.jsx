@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="hero-content">
 
           <span className="hero-badge">
-            🚀 LIVE DEMO SESSION • 10 JUNE 2026
+            🚀 LIVE DEMO SESSION • 1ST JULY 2026
           </span>
 
           <h1>

@@ -5,7 +5,7 @@ import "../styles/Countdown.css";
 import { trackWhatsApp } from "../utils/tracking";
 
 const Countdown = () => {
-  const targetDate = new Date("June 10, 2026 21:00:00").getTime();
+ const targetDate = new Date("July 1, 2026 08:00:00").getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -81,11 +81,11 @@ const Countdown = () => {
         <div className="event-details">
 
           <div>
-            📅 10 June 2026
+            📅 1 July 2026
           </div>
 
           <div>
-            ⏰ 09:00 PM IST
+            ⏰ 08:00 AM IST
           </div>
 
           <div>

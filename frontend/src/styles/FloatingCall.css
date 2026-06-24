@@ -47,14 +47,17 @@
 .floating-call:hover{
   transform:scale(1.08);
 }
+.floating-call{
+  position:fixed;
+  right:20px;
+  bottom:170px;
+  z-index:999;
+}
+
+/* Hide on mobile */
 
 @media(max-width:768px){
-
   .floating-call{
-    width:60px;
-    height:60px;
-    font-size:26px;
-    bottom:160px;
+    display:none;
   }
-
 }

@@ -40,13 +40,17 @@
   transform:scale(1.1);
 }
 
+.floating-whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:100px;
+  z-index:999;
+}
+
+/* Hide on mobile */
+
 @media(max-width:768px){
-
   .floating-whatsapp{
-    width:60px;
-    height:60px;
-    font-size:28px;
-    bottom:85px;
+    display:none;
   }
-
 }

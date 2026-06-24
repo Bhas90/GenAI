@@ -52,7 +52,7 @@ const SEO = () => {
 
       <meta
         property="og:url"
-        content="https://yourdomain.com"
+        content="https://www.vproskills.com"
       />
 
       <meta
@@ -62,7 +62,7 @@ const SEO = () => {
 
       <link
         rel="canonical"
-        href="https://yourdomain.com"
+        href="https://www.vproskills.com"
       />
 
     </Helmet>
